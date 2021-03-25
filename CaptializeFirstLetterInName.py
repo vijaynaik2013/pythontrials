@@ -14,10 +14,9 @@ import sys
 
 # Complete the solve function below.
 def solve(s):
-    a, b = s.split()
-    s = (a.capitalize() + " " + b.capitalize())
-    return (s)
-
+    def solve(s):
+        print(' '.join(word.capitalize() for word in s.split(' ')))
+        return s
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
